@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Startup</title>
+    <!-- Required meta tags Bootstrap (A ajouté) recommandé-->
+    <!-- La première ligne permet d'utiliser l'encodage UTF8 pour le texte -->
+    <!-- La deuxième ligne permet d'optimiser le site pour l'utilisation sur mobile -->
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Your own stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>    
+    <!-- On veut aussi centrer verticalement (plus complexe) : on va utiliser Flex (bootstrap) -->
+    <!-- On commence par activer flexbox avec d-flex PUIS la config pour centrer verticalement-->
+    <!-- Attention, il faut que le container couvre toute la hauteur de la page:  h-100 (la hauteur de la page est de 100-->
+    <div class = "container d-flex align-items-center h-100">
+      <!-- Ajout d'une row -->
+        <div class="row">
+          <!-- Division du div en plusieurs parties -->
+          <!-- la classe text-center (Bootstrap) permet de centrer la partie -->
+          <!-- Bootstrap utilise 12 cases pour toute la largeur de la page -->          
+          <header class="text-center col-12"> 
+            <!-- Il existe une classe uppercase dans Bootstrap -->
+            <h1 class="text-uppercase"> <strong> The biggest startup event of the year</strong></h1>
+          </header>
+
+          <!-- On crée un division pour espacer le bouton et le texte -->
+          <!-- col-12 pour couvrir toute la largeur -->
+          <div class="buffer col-12">
+             
+          </div>
+
+
+          <section class="text-center col-12">
+            <!-- Ajout d'une ligne horizontale -->
+            <hr>                       
+
+            <!-- Adresse menant à la page d'inscription créé par Mailchimp (on la lie au boutton)-->
+            <a href="https://mailchi.mp/c569084ca7ea/test">
+            <!-- Bootstrap Button -->
+            <!-- On ajoute le btn-xl pour créer une classe spécial dans btn-primary -->
+           <button type="button" class="btn btn-primary btn-xl">Find out more</button>
+           </a>
+         </section>
+
+       </div>
+     </div>
+  </body>
+</html>
